@@ -1,0 +1,137 @@
+html {
+	font-family: "Open Sans";
+}
+
+.flex-container-card {
+	display: flex;
+	justify-content: stretch;
+	background-color: white;
+	margin: 30px 30px 30px 30px;
+	padding: 32px;
+	border-radius: 8px;
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,.12);
+
+}
+
+.flex-container-book {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	margin: 30px 30px 30px 30px;
+	padding: 32px;
+	border-radius: 8px;
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,.12);
+	-webkit-box-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: justify;
+}
+
+
+.bookbox {
+	display: flex;
+	border: 0;
+	max-width: 100%;
+	padding-right: 16px;
+    vertical-align: middle;
+	display: inline-block;
+	-webkit-box-align: start;
+    align-items: flex-start;
+}
+
+
+.profile {
+	width: 100%;
+
+}
+
+.profilebox {
+	width: 40%;
+	padding: 24px 24px 24px 0px;
+}
+
+.cardwords {
+	color: black;
+	font-size: 1.2em;
+	text-align: left;
+} 
+
+.cards {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	margin: 30px 30px 30px 30px;
+
+}
+
+.reason-recommend {
+	color: grey;
+	font-size: 0.8em;
+	text-align: left;
+}
+
+.sidenav {
+	height: 100%; /* 100% Full-height */
+	width: 280px;
+	position: fixed; 
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #EEEEEE; 
+	overflow-x: hidden; 
+	padding-top: 60px;
+	transition: 0.5s;
+  }
+
+  /* The navigation menu links */
+  
+.sidenav a {
+	padding: 12px 12px 20px 48px;
+	text-decoration: none;
+	font-size: 18px;
+	color: #333333;
+	display: block;
+	font-family: "Open Sans";
+	transition: 0.3s;
+  }
+  
+  #top_image {
+	  width: 80%;
+	  margin-left: auto;
+	  margin-right: auto;
+	  display: block;
+  }
+  
+  .page-content {
+	  margin-left: 280px;
+  }
+  
+  #rights {
+	  font-family: "Open Sans";
+	  font-size: 8px;
+	  position: fixed;
+	  bottom: 20px;
+	  left: 60px;
+  }
+  
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	margin: 100px 10px auto auto;
+  }
+  
+.flex-container-1 {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	margin: 40px 10px auto auto;
+}
+
+
+.title {
+	margin-left: 80px;
+	margin-top: 100px;
+}
+
+
