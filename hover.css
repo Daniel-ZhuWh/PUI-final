@@ -1183,6 +1183,7 @@
   transition-property: transform;
 }
 .hvr-backward:hover, .hvr-backward:focus, .hvr-backward:active {
+  text-decoration: none;
   -webkit-transform: translateX(-8px);
   transform: translateX(-8px);
 }
