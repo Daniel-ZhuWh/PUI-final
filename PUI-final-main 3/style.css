@@ -1,0 +1,177 @@
+html {
+	font-family: "Open Sans";
+}
+
+.flex-container-card {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	margin: 15px;
+	padding: 32px;
+	border-radius: 8px;
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,.12);
+    cursor: pointer;
+}
+
+.flex-container-book, .flex-container-website {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	margin: 15px;
+	padding: 32px;
+	border-radius: 8px;
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,.12);
+    cursor: pointer;
+}
+
+
+.bookbox {
+	display: flex;
+	border: 0;
+	max-width: 100%;
+	padding-right: 16px;
+    vertical-align: middle;
+	display: inline-block;
+	-webkit-box-align: start;
+    align-items: flex-start;
+}
+
+
+.profile {
+	max-width: 100%;
+    min-width: 100px;
+}
+
+.profilebox {
+	width: 40%;
+	padding: 24px 24px 24px 0px;
+    min-width: 130px;
+}
+
+.cardwords {
+	color: black;
+	font-size: 1.2em;
+	text-align: left;
+    width: 60%;
+} 
+
+.cards {
+	background-color: white;
+	margin: 30px 30px 30px 30px;
+
+}
+
+.reason-recommend {
+	color: grey;
+	font-size: 0.8em;
+	text-align: left;
+}
+
+.sidenav {
+	background-color: #EEEEEE; 
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  /* The navigation menu links */
+  
+.sidenav a {
+	color: #333333;
+	font-family: "Open Sans";
+	transition: 0.3s;
+  }
+  
+  #top_image {
+	  width: 80%;
+	  margin-left: auto;
+	  margin-right: auto;
+	  display: block;
+  }
+  
+  .page-content {
+	  margin-left: 280px;
+  }
+  
+  #rights {
+	  font-family: "Open Sans";
+	  font-size: 8px;
+	  position: fixed;
+	  bottom: 20px;
+	  left: 60px;
+  }
+  
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	margin: 100px 10px auto auto;
+  }
+  
+.flex-container-1 {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	margin: 40px 10px auto auto;
+}
+
+
+.title {
+	margin-left: 10px;
+	margin-top: 60px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  #top_image {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .flex-container-card {
+        flex-wrap: wrap;
+    }
+    
+    .cardwords {
+        width: 100%;
+    }
+}
+
+
+.navtext {
+    margin-left: 20px;
+}
+
+.websitebox {
+    display: flex;
+	border: 0;
+	max-width: 40%;
+    max-height: 90%;
+	padding-right: 16px;
+    vertical-align: middle;
+	display: inline-block;
+}
+
+.fullheight {
+    min-height: 100vh;
+}
+
+.about_title {
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+.about_text {
+    margin-left: 80px;
+}
+
+.links {
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+}
