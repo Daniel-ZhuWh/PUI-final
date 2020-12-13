@@ -4,8 +4,10 @@ html {
 
 .flex-container-card {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+    align-items: center;
 	background-color: white;
+    height: 90%;
 	margin: 15px;
 	padding: 32px;
 	border-radius: 8px;
@@ -15,9 +17,11 @@ html {
 
 .flex-container-book, .flex-container-website {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+    align-items: center;
 	background-color: white;
 	margin: 15px;
+    height: 90%;
 	padding: 32px;
 	border-radius: 8px;
 	box-shadow: 0 5px 5px 0 rgba(0,0,0,.12);
@@ -26,19 +30,18 @@ html {
 
 
 .bookbox {
-	display: flex;
-	border: 0;
-	max-width: 100%;
+    border: 0;
+	width: 40%;
+    max-height: 60%;
 	padding-right: 16px;
-    vertical-align: middle;
-	display: inline-block;
-	-webkit-box-align: start;
-    align-items: flex-start;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 
 .profile {
-	max-width: 100%;
+	width: 100%;
     min-width: 100px;
 }
 
@@ -133,9 +136,10 @@ html {
 }
 
 @media only screen and (max-width: 520px) {
-    .flex-container-card {
+    .flex-container-card, .flex-container-website, .flex-container-book {
         flex-wrap: wrap;
     }
+    
     
     .cardwords {
         width: 100%;
@@ -148,13 +152,19 @@ html {
 }
 
 .websitebox {
-    display: flex;
 	border: 0;
-	max-width: 40%;
-    max-height: 90%;
+	width: 40%;
+    max-height: 60%;
 	padding-right: 16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+/*
+    display:table-cell;
     vertical-align: middle;
-	display: inline-block;
+    text-align:center
+*/
+/*	display: inline-block;*/
 }
 
 .fullheight {
@@ -174,4 +184,14 @@ html {
     text-decoration: underline;
     font-weight: bold;
     color: black;
+}
+
+.website {
+    width: 100%;
+    max-height: 100%;
+}
+
+.book {
+    width: 100%;
+    max-height: 100%;
 }

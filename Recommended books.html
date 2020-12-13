@@ -1,69 +1,180 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Homepage</title>
+		<title>Recommended books</title>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- styles -->
-         <link rel="stylesheet" type="text/css" href="style.css">
-         <link href="hover.css" rel="stylesheet" media="all">
+         <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+         <link href="Assets/css/hover.css" rel="stylesheet" media="all">
+	     <link rel="preconnect" href="https://fonts.gstatic.com">
+         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     </head>
     
 	<body>
-        <div id="mySidenav" class="sidenav">
-            <img id="top_image" src="top_image.png">
-            <a class="hvr-backward" href="index.html">Best Portfolios</a >
-            <a class="hvr-backward" href="Recommended%20books.html">Recommended books</a >
-            <a class="hvr-backward" href="#">Websites</a >
-            <a class="hvr-backward" href="#">About</a >
-            <p id="rights">All rights reserved by Yue</p >
-        </div>
-        <div class="page-content">
-            <div id="content">
-                <h1 class="title">
-                    Recommended books
-                </h1>
-                <div class="cards">
-                    <div class="flex-container-book hvr-shadow" >
-                        <div class="bookbox">
-                            <img class="book" src="books.png" alt="Name">
+        <div class="container-fluid">
+            <div class="row wrapper h-100 flex-column flex-md-row">
+                <aside class="col-12 col-md-3 p-0 flex-shrink-1 sidenav">
+                    <img id="top_image" src="Assets/image/top_image.png">
+                    <nav class="navbar navbar-expand-md navbar-light align-items-start flex-md-column flex-row navtext">
+                        <a class="navbar-brand" href="#">Carol's Site</a>
+                        <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                            <span class="navbar-toggler-icon"></span>
+                        </a>
+                        <div class="collapse navbar-collapse sidebar">
+                            <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                <li class="nav-item">
+                                    <a class="nav-link pl-0" href="index.html"><span class="">Best portfolios</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pl-0" href="Recommended%20books.html"><span class="">Recommended books</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pl-0" href="Websites.html"><span class="">Websites</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pl-0" href="About.html"><span class="">About</span></a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="cardwords">
-                            <span>
-                                <br>
-                                <span style="font-weight: bold;"> The Design of Everyday Things <br></span>
-                                 <br>
-                                <span class="reason-recommend">Reason:
-                                    It is a popular book in UX design and it is the first design book for a lot of professional designers.
-                                    You could get to know the basic thought of human-centered design</span> <br>
-                                    Click here to buy the book
-                            </span>
+                    </nav>
+                </aside>
+                <main class="col bg-faded py-3">
+                    <h1 class="title">Recommended books</h1>
+                    <div class="cards row">
+                        <div class="col-xl-6">
+                            <div class="flex-container-book hvr-shadow" onclick="window.open('https://www.amazon.com/Design-of-Everyday-Things-audiobook/dp/B07L5Y9HND/ref=sr_1_1?crid=1H03N14WSZ4CQ&dchild=1&keywords=the+design+of+everyday+things&qid=1607895731&sprefix=the+design+of+%2Caps%2C162&sr=8-1', '_blank');">
+                                <div class="bookbox">
+                                    <img class="book" src="Assets/image/books.png" alt="Name">
+                                </div>
+                                <div class="cardwords">
+                                    <span>
+                                        <br>
+                                        <span style="font-weight: bold;"> The Design of Everyday Things <br></span>
+                                         <br>
+                                        <span class="reason-recommend">Reason:
+                                            It is a popular book in UX design and it is the first design book for a lot of professional designers.
+                                            You could get to know the basic thought of human-centered design</span> <br>
+                                            Click here to buy the book
+                                    </span>
+                                </div>
+                            </div>
                         </div>
+
+                        <div class="col-xl-6">
+                            <div class="flex-container-book hvr-shadow" onclick="window.open('https://www.google.com/url?q=https://www.amazon.com/Universal-Methods-Design-Expanded-Revised/dp/1631597485&sa=D&ust=1607892134223000&usg=AOvVaw3-VE4hVpnFr1En3vuivwnJ', '_blank');">
+                                <div class="bookbox">
+                                    <img class="book" src="Assets/image/Universal.png" alt="Name">
+                                </div>
+                                <div class="cardwords">
+                                    <span>
+                                        <br>
+                                        <span style="font-weight: bold;"> Universal methods of design <br></span>
+                                         <br>
+                                        <span class="reason-recommend">It is a fantastic tool book for UX researchers. It includes 100 research methods and explain each in depth.</span> <br>
+                                            Click here to buy the book
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="flex-container-book hvr-shadow" >
-                        <div class="bookbox">
-                            <img class="book" src="books.png" alt="Name">
+                    
+                    <div class="cards row">
+                        <div class="col-xl-6">
+                            <div class="flex-container-book hvr-shadow" onclick="window.open('https://www.google.com/url?q=https://www.amazon.com/About-Face-Essentials-Interaction-Design/dp/1118766571&sa=D&ust=1607892134224000&usg=AOvVaw2Detc2D8Aca-ZB1i0Zs5pI', '_blank');">
+                                <div class="bookbox">
+                                    <img class="book" src="Assets/image/AboutFace.png" alt="Name">
+                                </div>
+                                <div class="cardwords">
+                                    <span>
+                                        <br>
+                                        <span style="font-weight: bold;"> About Face <br></span>
+                                         <br>
+                                        <span class="reason-recommend">This book shaped and evolved the landscape of interaction design. It is a comprehensive guide that takes the worldwide shift to smartphones and tablets into account.</span> <br>
+                                            Click here to buy the book
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="cardwords">
-                            <span>
-                                <br>
-                                <span style="font-weight: bold;"> The Design of Everyday Things <br></span>
-                                 <br><br>
-                                <span class="reason-recommend">Reason:
-                                    It is a popular book in UX design and it is the first design book for a lot of professional designers.
-                                    You could get to know the basic thought of human-centered design</span> 
-                            </span>
+
+                        <div class="col-xl-6">
+                            <div class="flex-container-book hvr-shadow" onclick="window.open('https://www.google.com/url?q=https://www.amazon.com/Articulating-Design-Decisions-Communicate-Stakeholders/dp/1491921560&sa=D&ust=1607892134225000&usg=AOvVaw0U-iV8x3RvhqFSObd07xdt', '_blank');">
+                                <div class="bookbox">
+                                    <img class="book" src="Assets/image/Articulating.png" alt="Name">
+                                </div>
+                                <div class="cardwords">
+                                    <span>
+                                        <br>
+                                        <span style="font-weight: bold;"> Articulating design decisions <br></span>
+                                         <br>
+                                        <span class="reason-recommend">Communication is always a key component for UX Designers. This book discusses how to communicate with Stakeholders, Keep Your Sanity, and Deliver the Best User Experience</span> <br>
+                                            Click here to buy the book
+                                    </span>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
-                </div>
+                    
+                    <div class="cards row">
+                        <div class="col-xl-6">
+                            <div class="flex-container-book hvr-shadow" onclick="window.open('https://www.google.com/url?q=https://www.amazon.com/Contextual-Design-Life-Interactive-Technologies-ebook/dp/B01MYOF6RY&sa=D&ust=1607892134225000&usg=AOvVaw24VCjai2benSj_NwNcthhp', '_blank');">
+                                <div class="bookbox">
+                                    <img class="book" src="Assets/image/Contextual.png" alt="Name">
+                                </div>
+                                <div class="cardwords">
+                                    <span>
+                                        <br>
+                                        <span style="font-weight: bold;"> TContextual design: design for life <br></span>
+                                         <br>
+                                        <span class="reason-recommend">It is a completely updated, hands-on guide that describes the core techniques needed to deliberately produce a compelling user experience.</span> <br>
+                                            Click here to buy the book
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6">
+                            <div class="flex-container-book hvr-shadow" onclick="window.open('https://www.google.com/url?q=https://www.amazon.com/Storytelling-User-Experience-Crafting-Stories/dp/1933820470&sa=D&ust=1607892134226000&usg=AOvVaw1vupV4zXSqU4_vwIX0WTLh', '_blank');">
+                                <div class="bookbox">
+                                    <img class="book" src="Assets/image/Storytelling.png" alt="Name">
+                                </div>
+                                <div class="cardwords">
+                                    <span>
+                                        <br>
+                                        <span style="font-weight: bold;"> Storytelling for user experience <br></span>
+                                         <br>
+                                        <span class="reason-recommend">A good UX design is always a great storyteller. This book teaches you how to craft and tell your own unique stories to improve your designs.</span> <br>
+                                            Click here to buy the book
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </main>
             </div>
         </div>
 
-        
-        <!-- </a > -->
 
+        <script>
+            $(document).ready(function () {
+                console.log("logged");
+                $(".sidenav").mCustomScrollbar({
+                     theme: "minimal"
+                });
 
-
-
+            });
+        </script>
     </body>
 		
 
